@@ -1,0 +1,5 @@
+﻿  win32client.cpp
+c:\users\jianfei.zhang\documents\visual studio 2015\projects\win32client\win32client\win32client.cpp(31): warning C4996: 'inet_addr': Use inet_pton() or InetPton() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  c:\program files (x86)\windows kits\8.1\include\um\winsock2.h(1850): note: 参见“inet_addr”的声明
+  win32client.vcxproj -> c:\users\jianfei.zhang\documents\visual studio 2015\Projects\win32client\Debug\win32client.exe
+  win32client.vcxproj -> c:\users\jianfei.zhang\documents\visual studio 2015\Projects\win32client\Debug\win32client.pdb (Full PDB)
