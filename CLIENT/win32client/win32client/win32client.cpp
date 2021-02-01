@@ -17,9 +17,12 @@ int main()
 	WSADATA wsaData;
 	SOCKET hSocket;
 	SOCKADDR_IN servAddr;
+	struct sockaddr_in ser_addr;
+	int str_len = 0;
+	int idx = 0, read_len = 0;
 
 	char message[30];
-	int strLen;
+	
 
 	if (WSAStartup(MAKEWORD(2, 2), &wsaData) != 0)
 		ErrorHandling("WSAtaruo()error!");
@@ -33,11 +36,20 @@ int main()
 
 	if (connect(hSocket,(SOCKADDR*)&servAddr,sizeof(servAddr))==SOCKET_ERROR)
 		 ErrorHandling("connect()error!");
-	strLen = recv(hSocket, message, sizeof(message) - 1, 0);
-	if (strLen == -1)
-		ErrorHandling("read()error!");
+	//strLen = recv(hSocket, message, sizeof(message) - 1, 0);
+
+	while (read_len= recv(hSocket,&message[idx++],1,0))
+	{
+		if (read_len == -1)
+			ErrorHandling("connect()error");
+		str_len += read_len;
+	}
+	
 	printf("Message from server : %s\n",message);
-	closesocket(hSocket);
+	printf("Function read call count: %d\n", str_len);
+
+	getchar();
+	closesocket(hSocket);	
 	WSACleanup();
 	
     return 0;

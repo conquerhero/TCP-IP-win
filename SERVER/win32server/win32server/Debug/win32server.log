@@ -1,4 +1,5 @@
 ﻿  stdafx.cpp
   win32server.cpp
-  win32server.vcxproj -> c:\users\jianfei.zhang\documents\visual studio 2015\Projects\win32server\Debug\win32server.exe
-  win32server.vcxproj -> c:\users\jianfei.zhang\documents\visual studio 2015\Projects\win32server\Debug\win32server.pdb (Full PDB)
+  LINK : 没有找到 C:\Gitworkspace\LOOPRATE\TCP-IP-win1\SERVER\win32server\Debug\win32server.exe 或上一个增量链接没有生成它；正在执行完全链接
+  win32server.vcxproj -> C:\Gitworkspace\LOOPRATE\TCP-IP-win1\SERVER\win32server\Debug\win32server.exe
+  win32server.vcxproj -> C:\Gitworkspace\LOOPRATE\TCP-IP-win1\SERVER\win32server\Debug\win32server.pdb (Full PDB)

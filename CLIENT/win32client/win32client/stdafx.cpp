@@ -3,6 +3,8 @@
 // stdafx.obj 将包含预编译类型信息
 
 #include "stdafx.h"
-
+#include <stdio.h>
+#include <stdlib.h>
+#include <WinSock2.h>
 // TODO: 在 STDAFX.H 中引用任何所需的附加头文件，
 //而不是在此文件中引用
